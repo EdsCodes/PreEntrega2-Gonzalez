@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(234, 215, 187);
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Nota: el body de la bagina inicio y los bodies de las otras pags se trabajan independientemente, pero el el header & footer son los mismos en todo el sitio web*/
+
+.body__index {
+    background-color: rgb(234, 215, 187);
+    font-family: 'Quicksand', sans-serif;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 0.16fr 0.2fr 1.0fr 1.5fr 0.8fr 0.7fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "imgSupFondo imgSupFondo"
+      "imgBotonesArriba carrete_prendas"
+      "imgsPagPPal imgsPagPPal"
+      "carrete_recomendados carrete_recomendados"
+      "footer footer";
+}
+
+/* header de todas las pags del sitio*/
+.header {
+    grid-area: header;
+    height: 50px;
+}
+.mensaje_inicial {
+    height: 15px;
+    font-size: 70%;
+    font-weight: bold;
+    display: inline-block;
+    animation: desplazar 15s linear infinite; /* Aplicar la animación */
+    white-space: nowrap; /* Evitar el salto de línea */
+    overflow: hidden; /* Ocultar texto que desborda */
+    position: relative; /* Para usar transform en relación a este elemento */
+}
+@keyframes desplazar {
+    0% {
+        transform: translateX(250%); /* Mover el texto fuera del contenedor a la derecha */
+    }
+    100% {
+        transform: translateX(-100%); /* Mover el texto fuera del contenedor a la izquierda */
+    }
+}
+.menu_navegacion {
+    text-align: center;
+    background-color: rgb(17, 57, 70);
+    display: flex;
+    justify-content: space-between;
+}
+.espacioMarca {
+    display: flex;
+}
+.tittleMarca {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    margin: 5px -25px 0px 20px;
+
+}
+.tittleMarca:hover {
+    color: rgb(188, 163, 127);
+}
+.logoMarca img{
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px 0px 0px 0px;
+}
+.navbar-nav a{
+    color: white;
+}
+.navbar-nav li a:hover{
+    color: rgb(188, 163, 127);
+}
+.navbar-toggler-icon {
+    border: white; /* Establece el color de fondo del botón de hamburguesa a blanco */
+}
+
+/*fin de header de todas las paginas, inicio cajas del body de pag Ppal*/
+.imgSupFondo {
+    grid-area: imgSupFondo;
+    background-image: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    
+}
+.imgSupFondo h3{
+    margin: 30px auto;
+    color: rgb(249, 234, 234);
+}
+.imgBotonesArriba {
+    grid-area: imgBotonesArriba;
+    background-image: url(https://images.pexels.com/photos/6888603/pexels-photo-6888603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    border-radius:2%;
+}
+.imgBotonesArriba button{
+    width: 250px;
+    color:rgb(17, 57, 70);
+    font-size: x-large;
+    text-align: center;
+    display: inline-block;
+    cont
+}
+.carrete_prendas {
+    grid-area: carrete_prendas;
+    background-color:blue;
+}
+.imgsPagPPal{
+    grid-area: imgsPagPPal;
+}
+.conjImgs {
+    display: flex;
+    margin: 5px;
+}
+
+.img1__pagPpal img{
+    width: 400px;
+    height: auto;
+    border-radius: 5%;
+}
+ .img2__pagPpal img{
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+}
+ .img3__pagPpal img{
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+}
+ .img4__pagPpal img{
+    width: 400px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.carrete_recomendados {
+    grid-area: carrete_recomendados;
+    background-color: blueviolet;
+}
+
+/*footer y sus hijos de todo el sitio web*/
+.footer {
+    grid-area: footer;
+    font-size: 80%;
+    background-color: rgb(188, 163, 127);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 1%;
+    justify-content: space-between;
+}
+.itemFooter {
+    align-items: center;
+}
+.itemFooter h2{
+    align-items: center;
+    font-size: 1rem;
+}
+.iconoRedesSociales {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.iconoRedesSociales li {
+    width: 20%;
+    height: 20%;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+
