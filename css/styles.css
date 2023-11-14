@@ -15,7 +15,7 @@ body {
 
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
-    grid-template-rows: 0.16fr 0.2fr 1.0fr 1.5fr 0.8fr 0.7fr;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.2fr 0.15fr 0.7clearfr 0fr;
     grid-auto-columns: 1fr;
     gap: 5px 5px;
     grid-auto-flow: row;
@@ -24,6 +24,7 @@ body {
       "imgSupFondo imgSupFondo"
       "imgBotonesArriba carrete_prendas"
       "imgsPagPPal imgsPagPPal"
+      "custom-shape-divider-bottom-1699987037 custom-shape-divider-bottom-1699987037"
       "carrete_recomendados carrete_recomendados"
       "footer footer";
 }
@@ -91,68 +92,129 @@ body {
     grid-area: imgSupFondo;
     background-image: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
+    margin-bottom: 50px;
 }
 .imgSupFondo h3{
-    margin: 30px auto;
+    margin: 35px auto;
     color: rgb(249, 234, 234);
     text-align: center;
 }
 .imgBotonesArriba {
     grid-area: imgBotonesArriba;
-    background-image: url(https://images.pexels.com/photos/1353938/pexels-photo-1353938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(https://images.pexels.com/photos/235525/pexels-photo-235525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     border-radius:2%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center
+    align-items: center;
+    opacity: 0.85;
 }
 .imgBotonesArriba button{
-    color:rgb(17, 57, 70);
-    font-size: x-large;
+    color: white;
+    font-size: 1.7rem;
+    width: 250px;
 }
 .imgBotonesArriba button:hover{
-    color: rgb(188, 163, 127);
+    color: rgb(255, 242, 216);
 }
-
 .carrete_prendas {
     grid-area: carrete_prendas;
-
 }
 .carousel-inner img{
     border-radius: 12px;
 }
 .imgsPagPPal{
     grid-area: imgsPagPPal;
+    align-items: center;
+    align-content: center;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 100%; 
+    grid-template-columns: 0.9fr 1fr 0.9fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-gap: 5px 5px; 
+    grid-template-areas: 
+        "img1__pagPpal img2__pagPpal img4__pagPpal"
+        "img1__pagPpal img3__pagPpal img4__pagPpal"; 
+    height: 100%;
 }
-.conjImgs {
-    display: flex;
-    margin: 5px;
+.img1__pagPpal { 
+    grid-area: img1__pagPpal; 
+    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo de su contenedor padre */
+    max-width: 100%; /* Garantiza que el contenedor no sea más ancho que el tamaño original de la imagen */
 }
-
 .img1__pagPpal img{
-    width: 400px;
-    height: auto;
-    border-radius: 5%;
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción original de la imagen */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    border-radius: 2%;
 }
- .img2__pagPpal img{
-    width: 200px;
-    height: auto;
-    border-radius: 5%;
+.img2__pagPpal { 
+    grid-area: img2__pagPpal;
+    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo de su contenedor padre */
+    max-width: 100%; /* Garantiza que el contenedor no sea más ancho que el tamaño original de la imagen */
 }
- .img3__pagPpal img{
-    width: 200px;
-    height: auto;
-    border-radius: 5%;
+.img2__pagPpal img{
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción original de la imagen */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    border-radius: 10%;
+    object-fit: cover;
+    margin-top: 90px;
 }
- .img4__pagPpal img{
-    width: 400px;
-    height: auto;
-    border-radius: 5%;
+.img3__pagPpal { 
+    grid-area: img3__pagPpal;
+    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo de su contenedor padre */
+    max-width: 100%; /* Garantiza que el contenedor no sea más ancho que el tamaño original de la imagen */ 
+}
+.img3__pagPpal img{
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción original de la imagen */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    border-radius: 10%;
+    object-fit: cover;
+    margin-bottom: 90px;
+}
+.img4__pagPpal { 
+    grid-area: img4__pagPpal; 
+    position: relative;
+    margin-right: 25px;
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo de su contenedor padre */
+    max-width: 100%; /* Garantiza que el contenedor no sea más ancho que el tamaño original de la imagen */ 
+}
+.img4__pagPpal img{
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción original de la imagen */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    border-radius: 2%;
+    object-fit: cover;
+}
+.custom-shape-divider-bottom-1699987037 {
+    grid-area: custom-shape-divider-bottom-1699987037;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-bottom: 0%;
+}
+.custom-shape-divider-bottom-1699987037 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+.custom-shape-divider-bottom-1699987037 .shape-fill {
+    fill: rgb(255, 242, 216);
 }
 
 .carrete_recomendados {
     grid-area: carrete_recomendados;
-    background-color: blueviolet;
+    background-color: rgb(255, 242, 216);
 }
 
 /*footer y sus hijos de todo el sitio web*/
