@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(234, 215, 187);
+    background-color: white;
     font-family: 'Quicksand', sans-serif;
 }
 
 /* Nota: el body de la bagina inicio y los bodies de las otras pags se trabajan independientemente, pero el el header & footer son los mismos en todo el sitio web*/
 
 .body__index {
-    background-color: rgb(234, 215, 187);
     font-family: 'Quicksand', sans-serif;
 
     display: grid;
@@ -32,7 +31,6 @@ body {
 /* header de todas las pags del sitio*/
 .header {
     grid-area: header;
-    height: 50px;
 }
 .mensaje_inicial {
     height: 15px;
@@ -93,28 +91,35 @@ body {
     grid-area: imgSupFondo;
     background-image: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
-    
 }
 .imgSupFondo h3{
     margin: 30px auto;
     color: rgb(249, 234, 234);
+    text-align: center;
 }
 .imgBotonesArriba {
     grid-area: imgBotonesArriba;
-    background-image: url(https://images.pexels.com/photos/6888603/pexels-photo-6888603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(https://images.pexels.com/photos/1353938/pexels-photo-1353938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     border-radius:2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
 }
 .imgBotonesArriba button{
-    width: 250px;
     color:rgb(17, 57, 70);
     font-size: x-large;
-    text-align: center;
-    display: inline-block;
 }
+.imgBotonesArriba button:hover{
+    color: rgb(188, 163, 127);
+}
+
 .carrete_prendas {
     grid-area: carrete_prendas;
-    background-color:blue;
+
+}
+.carousel-inner img{
+    border-radius: 12px;
 }
 .imgsPagPPal{
     grid-area: imgsPagPPal;
