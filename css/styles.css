@@ -15,7 +15,7 @@ body {
 
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
-    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.2fr 0.15fr 0.7clearfr 0fr;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.2fr 0.15fr 0.75fr 0fr;
     grid-auto-columns: 1fr;
     gap: 5px 5px;
     grid-auto-flow: row;
@@ -201,6 +201,7 @@ body {
     line-height: 0;
     transform: rotate(180deg);
     margin-bottom: 0%;
+    position: relative;
 }
 .custom-shape-divider-bottom-1699987037 svg {
     position: relative;
@@ -211,11 +212,60 @@ body {
 .custom-shape-divider-bottom-1699987037 .shape-fill {
     fill: rgb(255, 242, 216);
 }
-
+.frase_shapeDivider {
+    position: absolute; 
+    font-size: large;
+    top: 50%;
+    left: 50%;
+    transform: rotate(180deg);
+    padding: 20px;
+    color: black;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.blockquote {
+    align-content: end;
+}
+.blockquote-footer{
+    margin-top: 20px;
+    text-align: right;
+}
 .carrete_recomendados {
     grid-area: carrete_recomendados;
     background-color: rgb(255, 242, 216);
+    display: flex;
+    justify-content: space-between;
 }
+.card-body{
+    display: inline;
+    justify-content: space-between;
+    size: 20%;
+    height: -30%;
+    width: auto;    
+    align-content: center;
+}
+.card-body .btn {
+    width: 150px;
+    background-color: rgb(17, 57, 70);
+    margin: 5px auto;
+    align-content: center;
+}
+.card-body, a, p, h5{
+    text-decoration: none;
+    font-size: small;
+}
+.card {
+    border-radius: 5%;
+    width: 300px; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out; 
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px rgb(17, 57, 70); 
+  }
 
 /*footer y sus hijos de todo el sitio web*/
 .footer {
@@ -233,7 +283,7 @@ body {
 }
 .itemFooter h2{
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 .iconoRedesSociales {
     display: flex;
