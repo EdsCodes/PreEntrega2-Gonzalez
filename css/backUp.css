@@ -9,7 +9,7 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Nota: el body de la bagina inicio y los bodies de las otras pags se trabajan independientemente, pero el el header & footer son los mismos en todo el sitio web
+ Nota: el body de la bagina inicio y los bodies de las otras pags se trabajan independientemente, pero el el header & footer son los mismos en todo el sitio web
 
 .body__index {
     min-width: 100%;
@@ -31,7 +31,7 @@ body {
       "footer footer";
 }
 
-/* header de todas las pags del sitio*
+/* header de todas las pags del sitio*/
 .header {
     grid-area: header;
 }
@@ -40,17 +40,17 @@ body {
     font-size: 70%;
     font-weight: bold;
     display: inline-block;
-    animation: desplazar 25s linear infinite; /* Aplicar la animación *
-    white-space: nowrap; /* Evitar el salto de línea *
-    overflow: hidden; /* Ocultar texto que desborda *
-    position: relative; /* Para usar transform en relación a este elemento *
+    animation: desplazar 25s linear infinite; /* Aplicar la animación */
+    white-space: nowrap; /* Evitar el salto de línea */
+    overflow: hidden; /* Ocultar texto que desborda */
+    position: relative; /* Para usar transform en relación a este elemento */
 }
 @keyframes desplazar {
     0% {
-        transform: translateX(120%); /* Mover el texto fuera del contenedor a la derecha *
+        transform: translateX(120%); /* Mover el texto fuera del contenedor a la derecha */
     }
     100% {
-        transform: translateX(-100%); /* Mover el texto fuera del contenedor a la izquierda *
+        transform: translateX(-100%); /* Mover el texto fuera del contenedor a la izquierda */
     }
 }
 .menu_navegacion {
