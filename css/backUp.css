@@ -9,7 +9,7 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
- Nota: el body de la bagina inicio y los bodies de las otras pags se trabajan independientemente, pero el el header & footer son los mismos en todo el sitio web
+ /*Nota: el body de la pagina inicio y los bodies de las otras pags se trabajan independientemente, pero el el header & footer son los mismos en todo el sitio web*/
 
 .body__index {
     min-width: 100%;
@@ -93,7 +93,6 @@ body {
     background-image: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     margin-bottom: 50px;
-    max-width: 100%;
 }
 .imgSupFondo h3{
     margin: 35px auto;
