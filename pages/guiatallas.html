@@ -3,75 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prendas deportivas y casuales de Calidad - Me Lo LLevo Store</title>
+    <title>Prendas deportivas y casuales - Me Lo LLevo Store</title>
     <link rel="apple-touch-icon" sizes="192x192" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../multi/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./multi/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="../css/styles.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=Oswald&family=Poppins:wght@500&family=Quicksand:wght@600&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
-<body>
+<body> 
     <header class="header">
         <div class="mensaje_inicial">
-            <!--El siguiente <p> ira con movimiento de derecha a izquiera en la parte mas alta del header de la pagina-->
-            <p>Envios gratis a todo Colombia por compras mayores a $200.000 - *No aplica para pagos contraentrega - aplican T&C*</p>
+            <p>Bienvenid@ a Me Lo Llevo Store, tu tienda de ropa casual y deportiva, recuerda que tenemos ENVIOS GRATIS a todo Colombia por compras mayores a $200.000 - *No aplica para pagos contraentrega - aplican T&C*</p>
         </div>
-        <div class="menu_principal">
-            <!--el sgte es un menu tipo "burguer" que se muestra cuando el diseño de la pagina se muestra tipo mobile-->
-            <div class="menu_burguer">
-                <spanclass="material-symbols-outlined>
-                menu
-                </span>
-            </div>
-            <!--menu de navegacion dentro del mismo sitio Web-->
+        <nav class="menu_navegacion">
             <div class="espacioMarca">
-                <div class="titlePrincipal">
-                    <h1 class="tittleMarca">Me lo llevo Store</h1>
+                <div class="tittleMarca">
+                    <h2>Me lo llevo Store</h2>
                 </div>
                 <div class="logoMarca">
-                    <figure>
-                        <a href="../index.html" alt="pagina de Inicio"><img src="../multi/favicon_io/android-chrome-192x192.png" alt="logo de la marca"></a>
-                    </figure>
+                    <a class="logoMarca" href="index.html">
+                        <img src="../multi/favicon_io/android-chrome-192x192.png" alt="Logo de Me lo llevo Store">
+                    </a>
                 </div>
             </div>
-            <nav class="menu_navegacion">    
-                <ul>
-                    <li><a href="../index.html" class="vinculosBarraNav" alt="pagina de Inicio">Inicio</a></li>
-                    <li><a href="./guiatallas.html" class="vinculosBarraNav">Guia de tallas</a></li>
-                    <li><a href="./nosotros.html" class="vinculosBarraNav">Nosotros</a></li>
-                    <li><a href="./sesionregis.html" class="vinculosBarraNav">Inicia sesion</a></li>
-                    <li><a href="./pagcompras.html" class="vinculosBarraNav">Compras</a><li>
-                </ul>
-            </nav>
+            <div class="navbar navbar-expand-lg ms-auto">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./guiatallas.html">Guía de tallas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sesionregis.html">Inicia sesión</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pagcompras.html">Compras</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
-    <main> 
-        <div>
-            <h1>Guia de tallas</h1>
-            <br>
-            <h2>¿Como medir tu cuerpo?</h2>
-            <p><strong>PECHO.</strong> Mide el contorno de la parte más amplia del pecho, manteniendo la cinta horizontal.</p>
-            <br>
-            <p><strong>CINTURA.</strong> Mide la parte más estrecha (por lo general la región lumbar y los puntos de flexión laterales), manteniendo la cinta horizontal.</p>
-            <br>
-            <p><strong>CADERAS.</strong> Mide la circunferencia de la parte más amplia de tus caderas, manteniendo la cinta horizontal.</p>
-            <br>
-            <p><strong>ENTREPIERNA.</strong> Para saber la medida de la entrepierna de la prenda, mide desde la costura de la entrepierna hasta el tobillo, solo en el caso     de pantalón largo.</p>
-            <br>
-            <p>A continuacion te compartimos un video guia de como tomar tus tallas de la mejor manera:</p>
-            <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jK35Yjr0bMw?si=Q9pIDvpTNiQx6KvB" title="YouTube video player" frameborder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <br>
-            <p>Recuerda, si tu medida está entre dos tallas te recomendamos tomar la mayor. Para mayor exactitud te traemos el cuadro de tallas:</p>
-            <br>
-        </div>
-        <div>
-            <h2>Mujeres</h2>
+    <main class="body__guiaTallas">
+        <section class="Titulo_parrafoUno">
+            <h1>Guía de tallas</h1>
+        </section>
+        <section class="section_parrafoUno">
+            <div class="subTitulo_parrafoUno">
+                <h3>¿Cómo medir tu cuerpo?</h3>
+            </div> 
+            <div class="parrafoUno">
+                <p><strong>PECHO:</strong> Mide el contorno de la parte más amplia del pecho, manteniendo la cinta horizontal.</p>
+                <p><strong>CINTURA:</strong> Mide la parte más estrecha (generalmente la región lumbar y los puntos de flexión laterales), manteniendo la cinta horizontal.</p>
+                <p><strong>CADERAS:</strong> Mide la circunferencia de la parte más amplia de tus caderas, manteniendo la cinta horizontal.</p>
+                <p><strong>ENTREPIERNA:</strong> Para conocer la medida de la entrepierna de la prenda, mide desde la costura de la entrepierna hasta el tobillo, solo en el caso de pantalón largo.</p>
+                <div class="parrafoUno_continuacion">
+                    <p>A continuación te compartimos un video guía de cómo tomar tus tallas de la mejor manera:</p>
+                </div>
+            </div>
+        </section>
+        <section class="videoYt">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jK35Yjr0bMw?si=Q9pIDvpTNiQx6KvB" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <aside class="parrafoDos">
+            <p>Recuerda, si tu medida está entre dos tallas te recomendamos tomar la mayor. Para mayor exactitud, te traemos el cuadro de tallas:</p>
+            <div class="tablaMujeres">
+                <h2 class="titulo_tablaMujeres">Mujeres</h2>
+            </div>
             <table border="1" cellpadding="10px">
                 <tr>
                     <th>Tallas</th>
@@ -116,9 +129,9 @@
                     <td>80</td>
                 </tr>
             </table>
-        </div> 
-        <div>
-            <h2>Hombres</h2>
+        </aside> 
+        <div class="tablaHombres">
+            <h2 class="titulo_tablaHombres">Hombres</h2>
             <table border="1" cellpadding="10px">
                 <tr>
                     <th>Tallas</th>
@@ -164,12 +177,12 @@
                 </tr>
             </table>
         </div> 
-    </main>   
+    </main>
     <footer class="footer">
         <div class="itemFooter">
             <h2>Acerca de nosotros</h2>
-            <p>T&C de envio</p>
-            <p>T&C de devoluciones</p>
+            <p>Términos y Condiciones de Envío</p>
+            <p>Términos y Condiciones de Devoluciones</p>
         </div>
         <br>
         <div class="itemFooter">
@@ -177,25 +190,27 @@
             <p>contacto@melollevostore.com</p>
             <p>WhatsApp: (+57) 3205555555</p>
         </div>
+        <br>
         <div class="itemFooter">
             <h2>Te ayudamos</h2>
-            <p><a href="./pages/guiatallas.html">Guia de tallas y medidas</ahref></a></p>
-            <p>¿Donde está mi pedido?</p>
+            <p><a href="./pages/guiatallas.html">Guía de tallas y medidas</a></p>
+            <p>¿Dónde está mi pedido?</p>
             <p>PQRS</p>
         </div>
+        <br>
         <div class="itemFooter">
             <h2>Nuestras tiendas</h2>
             <p>Cali Cra 5 #17-29</p>
-            <p>Bog. Cll 42 #80-79 Lc 2</p>
-            <p>Per. Cra 17 #12-30 Lc 10</p>
+            <p>Bogotá Cll 42 #80-79 Lc 2</p>
+            <p>Pereira Cra 17 #12-30 Lc 10</p>
         </div>
         <div class="itemFooter">
             <h2>Síguenos</h2>
             <ul class="iconoRedesSociales">
-                <li><a href="http://www.instagram.com" target="_blank"><img src="./multi/social_instagram_43.ico" alt="icono instagram"></a></li>
-                <li><a href="http://www.facebook.com" target="_blank"><img src="./multi/social_facebook_fb_75.ico" alt="icono facebook"></a></li>
-                <li><a href="http://www.youtube.com" target="_blank"><img src="./multi/social_youtube_63.ico" alt="icono youtube"></a></li>
-                <li><a href="http://www.twitter.com" target="_blank"><img src="./multi/social_Twitter_78.ico" alt="icono x"></a></li>
+                <li><a href="http://www.instagram.com" target="_blank"><img src="../multi/social_instagram_43.ico" alt="icono instagram"></a></li>
+                <li><a href="http://www.facebook.com" target="_blank"><img src="../multi/social_facebook_fb_75.ico" alt="icono facebook"></a></li>
+                <li><a href="http://www.youtube.com" target="_blank"><img src="../multi/social_youtube_63.ico" alt="icono youtube"></a></li>
+                <li><a href="http://www.twitter.com" target="_blank"><img src="../multi/social_Twitter_78.ico" alt="icono twitter"></a></li>
             </ul>
         </div>
     </footer>

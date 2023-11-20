@@ -1,5 +1,4 @@
 header { 
-    grid-area: header; 
     .mensaje_inicial {
         height: 18px;
         font-size: 70%;
@@ -34,24 +33,24 @@ header {
                 font-size: 1.3rem;
                 padding-top: 10px;
                 margin: 15px;
-                }
-                .tittleMarca h2:hover {
-                        color: white;
-                }
             }
+                .tittleMarca h2:hover {
+                    color: white;
+                }
             .logoMarca img{
                 width: 18%;
                 height: auto;
                 border-radius: 50%;
                 margin: 10px 0px 0px 0px;
             }
-            .navbar {
-                .navbar-nav a{
-                    color: rgb(188, 163, 127);
-                }
-                .navbar-nav li a:hover{
+        }
+        .navbar {
+            .navbar-nav a{
+                color: rgb(188, 163, 127);
+            }
+            .navbar-nav li a:hover{
                     color: white;
-                }
             }
         }
     }
+  }

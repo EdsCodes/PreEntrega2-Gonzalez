@@ -11,95 +11,102 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-@media screen and (min-width: 320px) {
-  .body_index {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.4fr 2fr 2fr 1fr 1fr 1fr 1.6fr;
-    gap: 1px 1px;
-    grid-template-areas: "header" "imgSupFondo" "imgBotonesArriba" "carrete_prendas" "imgsPagPPal" "carrete_recomendados" "footer";
+header .mensaje_inicial {
+  height: 18px;
+  font-size: 70%;
+  font-weight: bold;
+  display: inline-block;
+  animation: desplazar 25s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+@keyframes desplazar {
+  0% {
+    transform: translateX(40%);
   }
-  header {
-    grid-area: header;
+  100% {
+    transform: translateX(-100%);
   }
-  header .mensaje_inicial {
-    height: 18px;
-    font-size: 70%;
-    font-weight: bold;
-    display: inline-block;
-    animation: desplazar 25s linear infinite;
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-  }
-  @keyframes desplazar {
-    0% {
-      transform: translateX(40%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  header .menu_navegacion {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(17, 57, 70);
-  }
-  header .menu_navegacion .espacioMarca {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  header .menu_navegacion .espacioMarca .tittleMarca h2 {
-    font-family: "Ubuntu", sans-serif;
-    color: rgb(234, 215, 187);
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.3rem;
-    padding-top: 10px;
-    margin: 15px;
-  }
-  header .menu_navegacion .espacioMarca .tittleMarca h2:hover {
-    color: white;
-  }
-  header .menu_navegacion .logoMarca img {
-    width: 18%;
-    height: auto;
-    border-radius: 50%;
-    margin: 10px 0px 0px 0px;
-  }
-  header .menu_navegacion .navbar .navbar-nav a {
-    color: rgb(188, 163, 127);
-  }
-  header .menu_navegacion .navbar .navbar-nav li a:hover {
-    color: white;
-  }
-  /* las sgtes clases no se necesitan, EN EL MOMENTO... sin embargo podria requerirlas mas adelante:
+}
+header .menu_navegacion {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(17, 57, 70);
+}
+header .menu_navegacion .espacioMarca {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu_navegacion .espacioMarca .tittleMarca h2 {
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(234, 215, 187);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  padding-top: 10px;
+  margin: 15px;
+}
+header .menu_navegacion .espacioMarca .tittleMarca h2:hover {
+  color: white;
+}
+header .menu_navegacion .espacioMarca .logoMarca img {
+  width: 18%;
+  height: auto;
+  border-radius: 50%;
+  margin: 10px 0px 0px 0px;
+}
+header .menu_navegacion .navbar .navbar-nav a {
+  color: rgb(188, 163, 127);
+}
+header .menu_navegacion .navbar .navbar-nav li a:hover {
+  color: white;
+}
 
-  .navbar-expand-lg {
-  }
-  .ms-auto {
-  }
-  .container-fluid {
-  }
-  .navbar-toggler {
-  }
-  .navbar-toggler-icon {
-  }
-  .collapse {
-  }
-  .navbar-collapse {
-  }
-  .navbar-nav {
-  }
-  .nav-item {
-  }
-  .nav-link {
-  }*/
+.footer {
+  grid-area: footer;
+  background-color: rgb(188, 163, 127);
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 5px;
+  justify-content: space-between;
+  position: relative;
+}
+.footer .itemFooter {
+  align-items: center;
+  width: 20vw;
+}
+.footer .itemFooter h2 {
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.footer .itemFooter p {
+  line-height: 0.4;
+  font-size: 0.4rem;
+  text-decoration: none;
+}
+.footer .itemFooter .iconoRedesSociales {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+}
+.footer .itemFooter .iconoRedesSociales li {
+  margin-right: 10px;
+}
+.footer .itemFooter .iconoRedesSociales li img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+/* <---Página Inicio---> */
+@media screen and (min-width: 480px) {
   .imgSupFondo {
-    grid-area: imgSupFondo;
     background-image: url(https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
     text-align: center;
@@ -107,14 +114,15 @@ body {
     height: 100px;
     margin: 5px auto;
   }
-  .imgSupFondo .imgSupFondo h3 {
+  .imgSupFondo h3 {
     margin: 15px;
   }
   .imgBotonesArriba {
-    grid-area: imgBotonesArriba;
     background-image: url(https://images.pexels.com/photos/235525/pexels-photo-235525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-size: cover;
-    height: 150px;
+    height: auto;
+    min-height: 200px;
+    object-fit: cover;
     border-radius: 2%;
     display: flex;
     justify-content: space-evenly;
@@ -130,11 +138,13 @@ body {
     color: rgb(188, 163, 127);
   }
   .carrete_prendas {
-    grid-area: carrete_prendas;
     margin: 5px auto;
   }
+  .carrete_prendas img {
+    border-radius: 1%;
+    min-height: fit-content;
+  }
   .imgsPagPPal {
-    grid-area: imgsPagPPal;
     align-items: center;
     align-content: center;
     display: grid;
@@ -147,13 +157,13 @@ body {
   }
   .imgsPagPPal .img1__pagPpal {
     grid-area: img1__pagPpal;
-    width: 100%; /* Asegura que el contenedor ocupe el ancho completo de su contenedor padre */
-    max-width: 100%; /* Garantiza que el contenedor no sea más ancho que el tamaño original de la imagen */
+    width: 100%;
+    max-width: 100%;
   }
   .imgsPagPPal .img1__pagPpal img {
-    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
-    height: auto; /* La altura se ajusta automáticamente para mantener la proporción original de la imagen */
-    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    width: 100%;
+    height: auto;
+    display: block;
     border-radius: 2%;
   }
   .imgsPagPPal .img2__pagPpal {
@@ -204,17 +214,15 @@ body {
     height: auto;
   }
   .carrete_recomendados {
-    grid-area: carrete_recomendados;
     background-color: rgb(255, 242, 216);
     display: flex;
     justify-content: space-between;
-    /*se ubica este hover en este punto ya que alponerlo arriba aplicaba el sombreado a cada elemento de la card*/
+    /* Se ubica este hover en este punto ya que al ponerlo arriba aplicaba el sombreado independientemente a cada elemento de la card */
   }
   .carrete_recomendados .card {
     width: 20%;
     border-radius: 5%;
     padding: 5px;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
     max-width: 100%;
@@ -266,123 +274,14 @@ body {
     font-size: 0.5em;
     background-color: rgb(17, 57, 70);
     align-items: center;
-    margin: 5px 0px 0px 0px;
+    align-content: center;
+    margin: 2px auto;
   }
   .carrete_recomendados .card:hover {
     box-shadow: 0 8px 16px rgb(17, 57, 70);
   }
-  .footer {
-    grid-area: footer;
-    background-color: rgb(188, 163, 127);
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 5px;
-    justify-content: space-between;
-    position: relative;
-  }
-  .footer .itemFooter {
-    align-items: center;
-    width: 20vw;
-  }
-  .footer .itemFooter h2 {
-    align-items: center;
-    font-size: 0.7rem;
-    font-weight: bold;
-    padding-bottom: 10px;
-  }
-  .footer .itemFooter p {
-    line-height: 0.4;
-    font-size: 0.4rem;
-    text-decoration: none;
-  }
-  .footer .itemFooter .iconoRedesSociales {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 0;
-  }
-  .footer .itemFooter .iconoRedesSociales li {
-    margin-right: 10px;
-  }
-  .footer .itemFooter .iconoRedesSociales li img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-}
-@media screen and (min-width: 480px) {
-  .footer {
-    grid-area: footer;
-  }
-  .footer .itemFooter {
-    align-items: center;
-    width: 20vw;
-  }
-  .footer .itemFooter h2 {
-    align-items: center;
-    font-size: 0.6rem;
-    font-weight: bold;
-    padding-bottom: 10px;
-  }
-  .footer .itemFooter p {
-    line-height: 0.4;
-    font-size: 0.43rem;
-    text-decoration: none;
-  }
 }
 @media screen and (min-width: 768px) {
-  .footer {
-    grid-area: footer;
-  }
-  .footer .itemFooter {
-    align-items: center;
-    width: 20vw;
-  }
-  .footer .itemFooter h2 {
-    align-items: center;
-    font-size: 0.8em;
-    font-weight: bold;
-    padding: 10px 0px;
-  }
-  .footer .itemFooter p {
-    line-height: 0.4;
-    font-size: 0.6rem;
-    text-decoration: none;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .body_index {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.4fr 1.5fr 1.5fr 2fr 2fr 1fr 2fr 1.6fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 1px 1px;
-    grid-auto-flow: row;
-    grid-template-areas: "header header" "imgSupFondo imgSupFondo" "imgBotonesArriba carrete_prendas" "imgBotonesArriba carrete_prendas" "imgsPagPPal imgsPagPPal" "divider divider" "carrete_recomendados carrete_recomendados" "footer footer";
-  }
-  .header {
-    grid-area: header;
-  }
-  .imgSupFondo {
-    grid-area: imgSupFondo;
-  }
-  .imgBotonesArriba {
-    grid-area: imgBotonesArriba;
-  }
-  .carrete_prendas {
-    grid-area: carrete_prendas;
-  }
-  .imgsPagPPal {
-    grid-area: imgsPagPPal;
-  }
-  .divider {
-    grid-area: divider;
-  }
-  .carrete_recomendados {
-    grid-area: carrete_recomendados;
-  }
   .carrete_recomendados .card .card-body .card-title {
     text-decoration: none;
     font-size: 0.9rem;
@@ -395,7 +294,61 @@ body {
   }
   .carrete_recomendados .card .card-body .card-text {
     text-decoration: none;
+    font-size: 0.8em;
+  }
+  .carrete_recomendados .card .card-body .seccionPrecios .textoTachado {
+    text-decoration: line-through;
+    font-size: 0.9rem;
+  }
+  .carrete_recomendados .card .card-body .seccionPrecios .card-textPrice {
+    color: orangered;
+    font-size: 0.9rem;
+  }
+  .carrete_recomendados .card .card-body .seccionPrecios p {
+    font-size: 0.9rem;
+  }
+  .carrete_recomendados .card .card-body .btn {
+    width: 100%;
+    min-width: 70px;
     font-size: 0.7em;
+    background-color: rgb(17, 57, 70);
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+  }
+  .footer .itemFooter {
+    align-items: center;
+    width: 20vw;
+  }
+  .footer .itemFooter h2 {
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .footer .itemFooter p {
+    line-height: 0.4;
+    font-size: 0.5rem;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .imgBotonesArriba {
+    height: auto;
+    object-fit: cover;
+  }
+  .carrete_recomendados .card .card-body .card-title {
+    text-decoration: none;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .carrete_recomendados .card .card-body h6 {
+    color: orangered;
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  .carrete_recomendados .card .card-body .card-text {
+    text-decoration: none;
+    font-size: 0.9em;
   }
   .carrete_recomendados .card .card-body .seccionPrecios {
     display: flex;
@@ -406,33 +359,26 @@ body {
   }
   .carrete_recomendados .card .card-body .seccionPrecios .textoTachado {
     text-decoration: line-through;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .carrete_recomendados .card .card-body .seccionPrecios .card-textPrice {
     color: orangered;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .carrete_recomendados .card .card-body .seccionPrecios p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   .carrete_recomendados .card .card-body .btn {
     width: 100%;
     min-width: 70px;
-    font-size: 0.5em;
+    font-size: 0.8em;
     background-color: rgb(17, 57, 70);
     align-items: center;
     margin: 5px 0px 0px 0px;
   }
-  .footer {
-    grid-area: footer;
-  }
-  .footer .itemFooter {
-    align-items: center;
-    width: 20vw;
-  }
   .footer .itemFooter h2 {
     align-items: center;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: bold;
     padding: 10px 0px;
   }
@@ -440,6 +386,12 @@ body {
     line-height: 0.4;
     font-size: 0.7rem;
     text-decoration: none;
+  }
+}
+/* <---Guias y tallas---> */
+@media screen and (min-width: 480px) {
+  .Titulo_parrafoUno {
+    text-align: center;
   }
 }
 
