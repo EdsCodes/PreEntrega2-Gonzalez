@@ -217,7 +217,6 @@ body {
     }
   }
 }
-
 @media screen and (min-width: 768px) {
   .carrete_recomendados {
     .card {
@@ -343,7 +342,6 @@ body {
       }
     }
   }
-
   .footer {
     .itemFooter {
       h2 {
@@ -364,27 +362,164 @@ body {
 
 /* <---Guias y tallas---> */
 @media screen and (min-width: 480px) {
-  .Titulo_parrafoUno {
+  .Titulo_parrafoUno h1{
     text-align: center;
+    font-size: 1.5em;
+    margin: 35px;
   }
   .section_parrafoUno {
-  }
-  .subTitulo_parrafoUno {
-  }
+    .subTitulo_parrafoUno h3{
+      font-size: 1.1em;
+    }
   .parrafoUno {
+    p{
+      font-size: 12px;
+    }
+  }
+  }
+  
+  .parrafoUno_continuacion {
+  }
+  .videoYt {
+    iframe {
+      width: 420px;
+      height: 255px;
+      margin-left: 15px;
+    }
+  }
+  .parrafoDos {
+    p {
+      font-size: 12px;
+    }
+    .tablaMujeres {
+      h2 {
+        text-align: center;
+        margin-top: 20px;
+        color: rgb(17, 57, 70);
+      }
+    }
+    table {
+      font-size: 12px;
+    }
+  }
+    
+  .tablaHombres {
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+      color: rgb(17, 57, 70);
+    }
+    table {
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .Titulo_parrafoUno h1{
+    font-size: 1.6em;
+    margin: 35px;
+  }
+  .section_parrafoUno {
+    .subTitulo_parrafoUno h3{
+      font-size: 1.2em;
+    }
+  .parrafoUno {
+    p{
+      font-size: 13px;
+    }
+  }
   }
   .parrafoUno_continuacion {
   }
   .videoYt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    iframe {
+      width: 550px;
+      height: 305px;
+      margin: 5px auto;
+    }
   }
   .parrafoDos {
+    p {
+      font-size: 13px;
+    }
+    .tablaMujeres {
+      h2 {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+    table {
+      font-size: 13px;
+    }
   }
-  .tablaMujeres {
-  }
-  .titulo_tablaMujeres {
-  }
+    
   .tablaHombres {
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    table {
+      font-size: 12px;
+    }
   }
-  .titulo_tablaHombres {
+}
+@media screen and (min-width: 1024px) {
+  .Titulo_parrafoUno h1{
+    text-align: center;
+    font-size: 1.7em;
+  }
+  .section_parrafoUno {
+    .subTitulo_parrafoUno h3{
+      font-size: 1.3em;
+    }
+  .parrafoUno {
+    p{
+      font-size: 14px;
+    }
+  }
+  }
+  
+  .parrafoUno_continuacion {
+  }
+  .videoYt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    iframe {
+      width: 550px;
+      height: 305px;
+      margin-left: 15px;
+    }
+  }
+  .parrafoDos {
+    p {
+      font-size: 15px;
+    }
+    .tablaMujeres {
+      h2 {
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+    table {
+      font-size: 14px;
+    }
+  }
+    
+  .tablaHombres {
+    margin-top: 60px;
+    padding-top: 45px;
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    table {
+      font-size: 14px;
+    }
   }
 }
