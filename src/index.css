@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.BarraNav {
+    background-color: #001731;
+}
+
+.BarraNavegacion a img{
+    width: 90px;
+    height: auto;
+}
+
+.navbar-nav li a {
+    color:azure
+}
+
+.navbar-nav li a:hover {
+    color: #A3FF71;
+}
+
+.itemsBarraNav {
+    margin-right: 45px;
+}
+
+.navbar-toggler {
+    color: azure;
+    background-color: azure;
+    align-content: end;
+}
+
+.botonCarrito a img{
+    width: 15px;
+    height: auto;
+}
+
+.tituloBienvenida{
+    text-align: center;
+    margin-top: 95px;
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+
