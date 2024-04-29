@@ -1,5 +1,5 @@
-import logo from "../images/Electro_Store_logo.jpg";
-import CartWidget from "./CartWidget";
+import logo from "../assets/images/Electro_Store_logo.jpg";
+import CartWidget from "../components/CartWidget";
 
 const NavBar = () => {
     return (

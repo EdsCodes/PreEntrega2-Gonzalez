@@ -38,7 +38,7 @@
 
 .tituloBienvenida{
     text-align: center;
-    margin-top: 95px;
+    margin: 95px 0 95px 0;
     font-family: "Tilt Neon", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -48,3 +48,26 @@
     "YROT" 0;
 }
 
+.divBanner{
+    margin-left: 60px;
+}
+
+.imgPc img {
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Titulobanner{
+    color: #23be04;
+    align-items: center;
+    margin: 25px;
+}  
+
+.SubTituloBanner{
+    margin: 15px;
+}
+
+.liBanner li{
+    margin-left: 35px;
+}
+                    

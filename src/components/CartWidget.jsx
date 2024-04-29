@@ -1,4 +1,4 @@
-import Cart3 from "../images/cart3.svg"
+import Cart3 from "../assets/images/cart3.svg"
 
 const CarWidget = () => {
     return (
