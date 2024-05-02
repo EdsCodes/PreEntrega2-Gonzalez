@@ -61,10 +61,10 @@ const Carousel = () => {
                         </button>
                     </div>
                 </div>
+            </div>
                 <div className="col">
                     <BannerImgs />
                 </div>
-            </div>
         </div>
     )
 }

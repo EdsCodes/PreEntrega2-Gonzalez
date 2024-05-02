@@ -14,9 +14,9 @@
 }
 
 .navbar-nav li a {
+    text-decoration: none;
     color:azure
 }
-
 .navbar-nav li a:hover {
     color: #A3FF71;
 }
@@ -36,20 +36,8 @@
     height: auto;
 }
 
-.tituloBienvenida{
-    text-align: center;
-    margin: 95px 0 95px 0;
-    font-family: "Tilt Neon", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-    "XROT" 0,
-    "YROT" 0;
-}
-
 .divBanner{
-    margin-left: 60px;
+    margin: 120px 0px 120px 80px;
 }
 
 .imgPc img {
@@ -70,4 +58,109 @@
 .liBanner li{
     margin-left: 35px;
 }
-                    
+ 
+/*ItemDetail*/
+.cardprodDetalle{
+    display: flex;
+    justify-content: center;
+}
+
+.imgCardDetalle{
+    flex: 0 0 auto; 
+    margin-left: calc((100% / 12) * 2); 
+    width: calc((100% / 12) * 3);
+}
+
+.tituloDetalleProd{
+    margin: 35px 0px 55px;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: 630;
+}
+
+.precioProducto{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.DescripcProducto{
+    font-size: large;
+    font-weight: 400;
+}
+
+.seccionTextoDetalle{
+    flex: 0 0 auto;
+    width: calc((100% / 12) * 5)
+}
+
+/*ItemCount*/
+.BtnsCantidad button {
+    width: 35px;
+    height: auto;
+    border-radius: 55px;
+    background-color: #001731;
+    color: azure;
+}
+
+.BtnsCantidad button:hover {
+    background-color: #23be04;
+    color: azure;
+}
+
+.BtnCarrito button{
+    width: 150px;
+    height: auto;
+    border-radius: 55px;
+    background-color: #001731;
+    color: azure;
+}
+
+.BtnCarrito button:hover {
+    background-color: #23be04;
+    color: azure;
+}
+
+/*Item*/
+.cardProducto img {
+    text-align: center;
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.card{
+    width: 250px;
+    height: 400px;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    text-align: center;
+}
+
+.textoCard{
+    align-items: end;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}

@@ -1,17 +1,24 @@
-import NavBar from "./components/NavBar.jsx"
-import ItemListContainer from "./components/ItemListContainer.jsx"
-import Carousel from "./components/Carousel.jsx"
-import Footer from "./components/Footer.jsx"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar"
+import ItemListContainer from "./components/ItemListContainer"
+import Footer from "./components/Footer"
+import ItemDetailContainer from "./components/ItemDetailContainer"
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <NavBar />
-      <ItemListContainer Titulo={"Las mejores ofertas las encuentras aqui"} />
-      <Carousel />
+      <Routes>
+        <Route path={"/"} element={<ItemListContainer />} />
+        <Route path={"/categoria/:id"} element={<ItemListContainer />} />
+        <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 
 export default App
+
+
+

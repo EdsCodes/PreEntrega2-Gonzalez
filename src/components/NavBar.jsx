@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/Electro_Store_logo.jpg";
 import CartWidget from "../components/CartWidget";
 
@@ -15,16 +16,22 @@ const NavBar = () => {
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <ul className="navbar-nav itemsBarraNav">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">Inicio</a>
+                                <NavLink className="nav-link textoNavbar" to={"/"}>Inicio</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Categorías</a>
+                                <NavLink className="nav-link textoNavbar" to={"/categoria/celulares"}>Celulares</NavLink>                            
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Iniciar Sesión</a>
+                                <NavLink className="nav-link textoNavbar" to={"/categoria/tablets & Pcs"}>Tablets & Pcs</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Nosotros</a>
+                                <NavLink className="nav-link textoNavbar" to={"/categoria/audifonos"}>Audifonos</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link textoNavbar" to={"/categoria/smartwatches"}>Smartwatches</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link textoNavbar" to={"/categoria/otros gadgets y accesorios"}>Otros</NavLink>
                             </li>
                         </ul>
                     </div>
