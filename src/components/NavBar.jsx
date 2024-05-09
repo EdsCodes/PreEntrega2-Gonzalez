@@ -7,9 +7,9 @@ const NavBar = () => {
         <div className="container-fluid BarraNav">
             <nav className="row navbar navbar-expand-lg bg-body-light">
                 <div className="container d-flex justify-content-between align-items-center BarraNavegacion">
-                    <a className="navbar-brand" href="#">
+                    <NavLink className="navbar-brand nav-link textoNavbar" to={"/"}>
                         <img src={logo} alt="Logo Electro Store" />
-                    </a>
+                    </NavLink>
                     <button className="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
