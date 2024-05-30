@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/images/Electro_Store_logo.jpg";
 import CartWidget from "../components/CartWidget";
 

@@ -1,4 +1,13 @@
-# React + Vite
+# Mayo de 2024
+## Proyecto final curso React con Vite- CoderHouse
+### Ecommerce: The Electro Store - tienda de articulos electronicos
+
+
+Este proyecto fue construido en Javascript utilizando React + Vite. Se uso contenido de mercadolibre Colombia par las imagenes, info, precios y referencias.
+
+
+
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

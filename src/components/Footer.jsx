@@ -70,7 +70,7 @@ const Footer = () => {
                 </div>
                 <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.25)' }}>
                     © 2024 Copyright: 
-                    <a className="text-body" href="https://github.com/EdsCodes/PreEntrega1-Gonzalez" target='_blank'> John Edward Gonzalez</a>
+                    <a className="text-body" href="https://github.com/EdsCodes/PreEntrega2-Gonzalez" target='_blank'> John Edward Gonzalez</a>
                 </div>
             </footer>
         </div>

@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
+
 .BarraNav {
     background-color: #001731;
 }
@@ -120,6 +135,7 @@
     color: azure;
 }
 
+
 /*Item*/
 .cardProducto img {
     text-align: center;
@@ -150,17 +166,66 @@
     align-items: end;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
+.cargando{
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+    margin: 210px 0 200px 0;
 }
 
-#root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+/*CheckOut*/
+.formCheckOut{
+    margin-top: 100px; 
 }
 
-footer {
-    margin-top: auto;
+.BtnCompra {
+    width: 650px;
+    height: auto;
+    border-Radius: 55px;
+    background-Color: #001731;
+    color: azure;
+    margin: 100px 0px 100px 0px;
+}
+
+.BtnCompra:hover {
+    background-color: #23be04;
+    color: azure;
+}
+
+.TextoCheckOut {
+    margin: 80px 0px 80px 0px;
+}
+
+.btnPagPpal {
+    width: 450px;
+    height: auto;
+    border-Radius: 55px;
+    background-Color: #001731;
+    color: azure;
+    margin: 100px 0px 100px 0px;
+}
+
+.btnPagPpal:hover {
+    background-color: #23be04;
+    color: azure;
+}
+
+
+/*Cart*/
+.TextoCart {
+    margin: 80px 0px 80px 0px;
+}
+
+.btnPagPpalCart {
+    width: 450px;
+    height: auto;
+    border-Radius: 55px;
+    background-Color: #001731;
+    color: azure;
+    margin: 100px 0px 100px 0px;
+}
+
+.btnPagPpalCart:hover {
+    background-color: #23be04;
+    color: azure;
 }

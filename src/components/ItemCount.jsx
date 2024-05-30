@@ -1,37 +1,35 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-const ItemCount = ({ inventario }) => {
+const ItemCount = ({inventario, onAdd}) => {
     const [counter, setCounter] = useState(1);
     const [itemInventario, setItemInventario] = useState(inventario);
+    const [mostrar, setMostrar] = useState(true);
 
     const aumentar = () => {
         if (counter < itemInventario) {
             setCounter(counter + 1);
         }
-    }
-    
+    };
+
     const disminuir = () => {
         if (counter > 1) {
             setCounter(counter - 1);
         }
-    }
+    };
 
-    const onAdd = () => {
+    const addToCart = () => {
         if (counter <= itemInventario) {
             setItemInventario(itemInventario - counter);
+            onAdd(counter); 
             setCounter(1);
-            console.log("Agregaste " + counter + " a tu carrito de compras!")
+            setMostrar(false);
         }
-    }
-
-    const agregarCarrito = () => {
-        onAdd();
-        //Espacio para function de notificacion de producto añadido (despues...) 
-    }
+    };
 
     useEffect(() => {
         setItemInventario(inventario);
-    }, [inventario])
+    }, [inventario]);
 
     return (
         <div className="container">
@@ -43,12 +41,24 @@ const ItemCount = ({ inventario }) => {
                         <button type="button" className="btn btnAumentar" onClick={aumentar}>+</button>
                     </div>
                 </div>
-                <div className="col BtnCarrito">       
-                    <button type="button" className="btn" onClick={agregarCarrito}>Agrega al carrito</button>
+                <div className="col BtnCarrito">
+                    {mostrar 
+                        ? <button type="button" className="btn" onClick={addToCart}>Agregar al carrito</button>
+                        : <Link to="/Checkout" className="btn" 
+                            style={{
+                                width: '150px',
+                                height: 'auto',
+                                borderRadius: '55px',
+                                backgroundColor: '#001731',
+                                color: 'azure',
+                            }}>
+                            Finalizar Compra
+                        </Link>
+                    }
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default ItemCount;
