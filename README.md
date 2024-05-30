@@ -9,13 +9,11 @@ Se incluye el .env para facilitar la revision del proyecto (no se añadio a .git
 
 Nota: en el ultimo espacio del footer de todas las paginas esta alojado el Link que lleva al repo del proyecto.
 
+URL publica de la pagina (Netlify): https://proyecto-final-gonzalez-coder.netlify.app/
 
 
 
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Elaborado por:
+John Edward Gonzalez
+LinkedIn: John Edward Gonzalez
+e-mail: edscodes@gmail.com
